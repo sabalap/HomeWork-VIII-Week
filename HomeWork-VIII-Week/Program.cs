@@ -31,12 +31,9 @@ class Program
 //კონსოლიდან შეიყვანეთ ძაღლის სახელი და შექმენით ახალი Dog ტიპის ობიექტი პროგრამის Main-დან, 
 //გადაეცით Dog ობიექტს სახელი და შემდეგ შეასრულეთ GetName და Eat მეთოდები.
 
-
-        Console.WriteLine("Enter name");
-        string name = Console.ReadLine();
-
         Dog dog = new Dog();
-        Console.WriteLine($"The dog's name is {name}");
+        dog.SetName();
+        dog.GetName();
         dog.Eat();
     }
 }
